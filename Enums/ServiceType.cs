@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Travel_Agency_System.Enums
 {
-    internal class ServiceType
+    public enum ServiceType
     {
+        Economy,
+        Standard,
+        AllInclusive,
+        VIP
     }
 }

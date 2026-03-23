@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Travel_Agency_System.Enums
 {
-    internal class Season
+    public enum Season
     {
+        Low,    
+        Mid,    
+        High
     }
 }

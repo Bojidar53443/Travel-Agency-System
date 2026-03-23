@@ -4,7 +4,11 @@ using System.Text;
 
 namespace Travel_Agency_System.Enums
 {
-    internal class BookingStatus
+    public enum BookingStatus
     {
+        Active,      
+        Canceled,   
+        Completed,   
+        Pending
     }
 }
