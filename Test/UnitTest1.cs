@@ -39,5 +39,17 @@ namespace Test
 
             Assert.That(fullName, Is.EqualTo("Ivan Ivanov"));
         }
+
+
+        [Test]
+        public void Trip_AvailableSeats_ShouldDecreaseWhenClientAdded()
+        {
+            var trip = new Trip { MaxCapacity = 50 };
+            var registeredClients = new List<int> { 1, 2, 3 }; 
+
+            int available = trip.MaxCapacity - registeredClients.Count;
+
+            Assert.That(available, Is.EqualTo(47));
+        }
     }
 }
