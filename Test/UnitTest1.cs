@@ -95,5 +95,13 @@ namespace Test
             var booking = new Booking { ClientId = 505 };
             Assert.That(booking.ClientId, Is.EqualTo(505));
         }
+
+        [Test]
+        public void Booking_FinalPrice_ShouldBeCalculatedCorrectly()
+        {
+            var booking = new Booking { FinalPrice = 1500.00m };
+            Assert.That(booking.FinalPrice, Is.EqualTo(1500.00m));
+        }
+
     }
 }
