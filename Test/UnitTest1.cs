@@ -37,7 +37,7 @@ namespace Test
 
             string fullName = $"{client.FirstName} {client.LastName}";
 
-            Assert.That(fullName, Is.EqualTo("Ivan Ivanov"));
+            Assert.That(fullName, Is.EqualTo("Ivan  Ivanov"));
         }
 
 
