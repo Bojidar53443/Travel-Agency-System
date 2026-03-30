@@ -14,6 +14,7 @@ namespace Travel_Agency_System
                 menu.ShowMainMenu();
                 string choice = Console.ReadLine();
 
+                
                 switch (choice)
                 {
                     case "1": menu.HandleClientMenu(); break;
