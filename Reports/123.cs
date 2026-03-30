@@ -6,5 +6,6 @@ namespace Travel_Agency_System.Reports
 {
     internal class _123
     {
+        int n = 12;
     }
 }
