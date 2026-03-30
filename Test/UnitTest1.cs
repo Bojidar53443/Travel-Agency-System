@@ -88,5 +88,12 @@ namespace Test
             var client = new Client { Phone = "0888123456" };
             Assert.That(client.Phone, Is.EqualTo("0888123456"));
         }
+
+        [Test]
+        public void Booking_ClientId_ShouldMatchAssignedValue()
+        {
+            var booking = new Booking { ClientId = 505 };
+            Assert.That(booking.ClientId, Is.EqualTo(505));
+        }
     }
 }
