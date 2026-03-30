@@ -59,5 +59,14 @@ namespace Test
 
             Assert.That(booking.Status, Is.EqualTo(BookingStatus.Pending));
         }
+
+        [Test]
+        public void ExtraService_Price_ShouldNotBeNegative()
+        {
+            var service = new ExtraService { Price = 50.0m };
+
+            Assert.That(service.Price, Is.GreaterThanOrEqualTo(0));
+        }
+
     }
 }
