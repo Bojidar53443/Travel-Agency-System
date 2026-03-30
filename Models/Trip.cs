@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Travel_Agency_System.Models
 {
-    internal class Trip
+    public class Trip
     {
         public int Id { get; set; }
         public string MainDestination { get; set; }
