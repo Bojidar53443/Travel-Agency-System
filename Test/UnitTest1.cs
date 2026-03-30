@@ -81,5 +81,12 @@ namespace Test
             var client = new Client { Email = "dqdokukuruz.com" };
             Assert.That(client.Email, Is.EqualTo("enevdar.com"));
         }
+
+        [Test]
+        public void Client_Phone_ShouldStoreCorrectValue()
+        {
+            var client = new Client { Phone = "0888123456" };
+            Assert.That(client.Phone, Is.EqualTo("0888123456"));
+        }
     }
 }
