@@ -51,5 +51,13 @@ namespace Test
 
             Assert.That(available, Is.EqualTo(47));
         }
+
+        [Test]
+        public void Booking_InitialStatus_ShouldBePending()
+        {
+            var booking = new Booking { Status = BookingStatus.Pending };
+
+            Assert.That(booking.Status, Is.EqualTo(BookingStatus.Pending));
+        }
     }
 }

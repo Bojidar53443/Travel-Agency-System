@@ -5,7 +5,7 @@ using Travel_Agency_System.Enums;
 
 namespace Travel_Agency_System.Models
 {
-    internal class Booking
+    public class Booking
     {
         public int Id { get; set; }
         public int ClientId { get; set; }
