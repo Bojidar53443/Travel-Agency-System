@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../Tests/Tests.csproj" Id="79fc2445-c73b-4f5d-96ff-12d1fe9c5275" />
   <Project Path="Travel Agency System.csproj" />
 </Solution>
