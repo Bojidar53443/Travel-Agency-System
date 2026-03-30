@@ -14,7 +14,7 @@ namespace Travel_Agency_System.Services
         {
             
             var booking = DataContext.Bookings.FirstOrDefault(b => b.Id == bookingId);
-            if (booking == null) return "Грешка: Резервацията не е намерена.";
+            if (booking == null) return "Грешка: Резервацията не е  намерена.";
 
             
             if (amount < booking.FinalPrice)
