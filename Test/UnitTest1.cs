@@ -68,5 +68,11 @@ namespace Test
             Assert.That(service.Price, Is.GreaterThanOrEqualTo(0));
         }
 
+        [Test]
+        public void Trip_BasePrice_ShouldHoldCorrectValue()
+        {
+            var trip = new Trip { BasePrice = 1200.50m };
+            Assert.That(trip.BasePrice, Is.EqualTo(1200.50m));
+        }
     }
 }
