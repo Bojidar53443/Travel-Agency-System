@@ -103,5 +103,11 @@ namespace Test
             Assert.That(booking.FinalPrice, Is.EqualTo(1500.00m));
         }
 
+        [Test]
+        public void ExtraService_Name_ShouldBeCorrect()
+        {
+            var service = new ExtraService { Name = "Застраховка" };
+            Assert.That(service.Name, Is.EqualTo("Застраховка"));
+        }
     }
 }
