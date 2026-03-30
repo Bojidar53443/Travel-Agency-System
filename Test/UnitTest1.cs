@@ -26,6 +26,14 @@ namespace Test
             Assert.That(duration, Is.EqualTo(9));
         }
 
-       
+        [Test]
+        public void Client_FullName_ShouldConcatenateCorrectly()
+        {
+            var client = new Client { FirstName = "Ivan", LastName = "Ivanov" };
+
+            string fullName = $"{client.FirstName} {client.LastName}";
+
+            Assert.That(fullName, Is.EqualTo("Ivan Ivanov"));
+        }
     }
 }
