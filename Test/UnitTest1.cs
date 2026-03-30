@@ -101,6 +101,7 @@ namespace Test
         {
             var booking = new Booking { FinalPrice = 1500.00m };
             Assert.That(booking.FinalPrice, Is.EqualTo(1500.00m));
+           
         }
 
         [Test]
@@ -109,5 +110,8 @@ namespace Test
             var service = new ExtraService { Name = "Застраховка" };
             Assert.That(service.Name, Is.EqualTo("Застраховка"));
         }
+
+
+       
     }
 }
