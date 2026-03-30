@@ -74,5 +74,12 @@ namespace Test
             var trip = new Trip { BasePrice = 1200.50m };
             Assert.That(trip.BasePrice, Is.EqualTo(1200.50m));
         }
+
+        [Test]
+        public void Client_Email_ShouldStoreCorrectValue()
+        {
+            var client = new Client { Email = "dqdokukuruz.com" };
+            Assert.That(client.Email, Is.EqualTo("enevdar.com"));
+        }
     }
 }
