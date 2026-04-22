@@ -1,4 +1,7 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="travels.json" />
+  </Folder>
   <Project Path="Test/Test.csproj" Id="252f1efc-3378-4eec-8279-51475dfff0a0" />
   <Project Path="Travel Agency System.csproj" />
 </Solution>
