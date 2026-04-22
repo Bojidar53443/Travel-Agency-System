@@ -1,4 +1,8 @@
 <Solution>
+  <Folder Name="/JsonAddings/">
+    <File Path="Travel.cs" />
+    <File Path="TravelRepository.cs" />
+  </Folder>
   <Folder Name="/Solution Items/">
     <File Path="travels.json" />
   </Folder>
