@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Travel_Agency_System.Data;
 
 namespace Travel_Agency_System.Models
 {
     public class Client
     {
-        public int Id { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
-        public string Phone { get; set; }
-        public List<int> BookingHistoryIds { get; set; } = new List<int>();
+       
+            public int Id { get; set; }
+            public string Name { get; set; }
+            public string Surname { get; set; }
+            public string EmailAddress { get; set; }
+            public string PhoneNumber { get; set; }
+        
     }
 }

@@ -14,10 +14,10 @@ namespace Travel_Agency_System.Services
             var client = new Client
             {
                 Id = nextId,
-                FirstName = firstName,
-                LastName = lastName,
-                Email = email,
-                Phone = phone
+                Name = firstName,
+                Surname = lastName,
+                EmailAddress = email,
+                PhoneNumber = phone
             };
             DataContext.Clients.Add(client);
         }
@@ -28,8 +28,8 @@ namespace Travel_Agency_System.Services
             var client = DataContext.Clients.FirstOrDefault(c => c.Id == clientId);
             if (client != null)
             {
-                client.Phone = newPhone;
-                client.Email = newEmail;
+                client.PhoneNumber = newPhone;
+                client.EmailAddress = newEmail;
                 return true;
             }
             return false;

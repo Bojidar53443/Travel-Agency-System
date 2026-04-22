@@ -16,7 +16,7 @@ namespace Travel_Agency_System.Reports
             
             return DataContext.Clients
                 .Where(c => trip.RegisteredClientIds.Contains(c.Id))
-                .Select(c => $"{c.FirstName} {c.LastName}")
+                .Select(c => $"{c.Name} {c.Surname}")
                 .ToList();
         }
 

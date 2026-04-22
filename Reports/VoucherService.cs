@@ -27,8 +27,8 @@ namespace Travel_Agency_System.Reports
             sb.AppendLine($" Номер на ваучер: {booking.Id:D5}");
             sb.AppendLine($" Дата на издаване: {DateTime.Now:dd/MM/yyyy}");
             sb.AppendLine("--------------------------------------------------");
-            sb.AppendLine($" КЛИЕНТ: {client.FirstName} {client.LastName}");
-            sb.AppendLine($" ТЕЛЕФОН: {client.Phone}");
+            sb.AppendLine($" КЛИЕНТ: {client.Name} {client.Surname}");
+            sb.AppendLine($" ТЕЛЕФОН: {client.PhoneNumber}");
             sb.AppendLine("--------------------------------------------------");
             sb.AppendLine($" ДЕСТИНАЦИЯ: {trip.MainDestination}");
             sb.AppendLine($" ПЕРИОД: {trip.StartDate:dd/MM/yyyy} - {trip.EndDate:dd/MM/yyyy}");

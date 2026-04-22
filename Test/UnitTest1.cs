@@ -33,9 +33,9 @@ namespace Test
         [Test]
         public void Client_FullName_ShouldConcatenateCorrectly()
         {
-            var client = new Client { FirstName = "Ivan", LastName = "Ivanov" };
+            var client = new Client { Name = "Ivan", Surname = "Ivanov" };
 
-            string fullName = $"{client.FirstName} {client.LastName}";
+            string fullName = $"{client.Name} {client.Surname}";
 
             Assert.That(fullName, Is.EqualTo("Ivan  Ivanov"));
         }
@@ -78,15 +78,15 @@ namespace Test
         [Test]
         public void Client_Email_ShouldStoreCorrectValue()
         {
-            var client = new Client { Email = "dqdokukuruz.com" };
-            Assert.That(client.Email, Is.EqualTo("enevdar.com"));
+            var client = new Client { EmailAddress = "dqdokukuruz.com" };
+            Assert.That(client.EmailAddress, Is.EqualTo("enevdar.com"));
         }
 
         [Test]
         public void Client_Phone_ShouldStoreCorrectValue()
         {
-            var client = new Client { Phone = "0888123456" };
-            Assert.That(client.Phone, Is.EqualTo("0888123456"));
+            var client = new Client { PhoneNumber = "0888123456" };
+            Assert.That(client.PhoneNumber, Is.EqualTo("0888123456"));
         }
 
         [Test]
